@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#195033","outline":"#717972","error":"#ba1a1a","surface-dim":"#d3daef","on-primary":"#ffffff","on-surface-variant":"#414942","on-secondary-container":"#735700","secondary-container":"#fece57","inverse-primary":"#9ad3ad","outline-variant":"#c0c9c0","on-background":"#141b2b","surface-tint":"#33694a","surface-bright":"#f9f9ff","on-tertiary-container":"#78b690","surface-container-lowest":"#ffffff","surface-container-high":"#e1e8fd","surface-variant":"#dce2f7","surface-container-low":"#f1f3ff","on-primary-fixed":"#002110","background":"#f9f9ff","on-error":"#ffffff","secondary-fixed":"#ffdf98","inverse-surface":"#293040","secondary":"#775a00","error-container":"#ffdad6","tertiary-fixed":"#b0f1c7","tertiary-fixed-dim":"#95d4ac","on-error-container":"#93000a","primary-container":"#0d472b","on-secondary-fixed-variant":"#5a4300","on-tertiary":"#ffffff","surface":"#f9f9ff","tertiary-container":"#00482a","on-primary-container":"#7db591","secondary-fixed-dim":"#eec14b","on-tertiary-fixed":"#002111","primary-fixed":"#b6f0c8","surface-container-highest":"#dce2f7","tertiary":"#002f1a","on-tertiary-fixed-variant":"#0f5132","on-secondary-fixed":"#251a00","on-secondary":"#ffffff","on-surface":"#141b2b","primary":"#002f19","surface-container":"#e9edff","primary-fixed-dim":"#9ad3ad","inverse-on-surface":"#edf0ff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"1.5rem","margin-mobile":"1.25rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","space-xs":"0.25rem","space-sm":"0.5rem","gutter-mobile":"1rem","margin":"3rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"display-lg":["Montserrat"],"label-sm":["Inter"],"title-md":["Montserrat"],"headline-lg":["Montserrat"],"display-lg-mobile":["Montserrat"],"label-md":["Inter"],"headline-md":["Montserrat"],"headline-sm":["Montserrat"],"label-lg":["Inter"]},"fontSize":{"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"600"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.015em","fontWeight":"600"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"500"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.02em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"><header class="fixed top-0 w-full z-50"><div class="bg-primary text-on-primary border-b border-primary-container/40"><div class="max-w-[1440px] mx-auto px-gutter h-10 flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-secondary-fixed"><span class="material-symbols-outlined text-[15px]">directions_boat</span><span class="tracking-wide uppercase font-semibold text-secondary-fixed">Tránsito Marítimo:</span></div><span class="text-surface-container-high/90 truncate max-w-xs md:max-w-md">Reefer en ruta: Buenaventura → Port of Jebel Ali (Dubai) • ETA 18 Días • Cold-Chain -20°C Verified</span></div><div class="hidden lg:flex items-center gap-space-lg"><div class="flex items-center gap-space-xs px-2 py-0.5 rounded bg-tertiary-container/80 text-on-tertiary-container border border-secondary/40"><span class="material-symbols-outlined text-[13px] text-secondary-fixed">verified</span><span class="uppercase tracking-wider font-semibold">Halal Certified Exporter • UAE MoIAT Aligned</span></div><div class="flex items-center gap-space-xs text-surface-container-high hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[14px] text-secondary-fixed">location_on</span><span>Dubai DMCC Office • Unit 42-B</span></div><div class="flex items-center rounded-full bg-primary-container px-1 py-0.5 border border-primary-container/60"><button class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold text-[10px] tracking-wider">USD $</button><button class="px-2 py-0.5 rounded-full text-surface-container-high hover:text-on-primary text-[10px] tracking-wider">AED د.إ</button></div><div class="flex items-center gap-2 pl-2 text-surface-container-high"><span class="cursor-pointer text-on-primary font-bold">ES</span><span class="text-primary-container">|</span><span class="cursor-pointer hover:text-on-primary">EN</span><span class="text-primary-container">|</span><span class="cursor-pointer hover:text-secondary-fixed font-arabic" dir="rtl">العربية</span></div></div></div></div><div class="bg-surface-container-lowest/95 backdrop-blur-md border-b border-surface-variant shadow-[0_4px_20px_-4px_rgba(13,71,43,0.06)]"><div class="max-w-[1440px] mx-auto px-gutter h-20 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Castilla International Fruits Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ws17QyC7ltgu0EgLjcjZfW6fWh0YexXp1956aiK-iooh2cVlENZ7F4vpAoEh3FvlCO21cuGtBeA00gwCj5y8W-s3HWf5PSrRufcC6GkOiGN04HY38ACetb74svXy9qU_o1fgvdP7CA9mv3KGdnSpzEIJojr6ukn5yBahaWvY7cBDEF_N57pvb6RheTpK0HKqnsP2HmgYPUpFgxVYeImFzJiO_opQj0PEnGqo08HmtrpKjmMJmsTXkHWG_x"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary font-extrabold tracking-tight leading-none">CASTILLA</span><span class="font-label-sm text-[10px] uppercase tracking-[0.25em] text-secondary font-bold">International Fruits • UAE Trade Hub</span></div></div><nav class="hidden xl:flex items-center gap-1 font-label-lg text-label-lg" data-active-classes="bg-surface-container text-primary font-bold rounded-lg shadow-sm"><a aria-current="page" class="px-3 py-2 transition-colors bg-surface-container text-primary font-bold rounded-lg shadow-sm" data-path="inicio" href="#">Inicio</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" data-path="quienes-somos" href="#">Quiénes Somos</a><div class="relative group"><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors flex items-center gap-1" data-path="portafolio-de-productos" href="#"><span>Portafolio de Productos</span><span class="material-symbols-outlined text-[16px] transition-transform group-hover:rotate-180">expand_more</span></a></div><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" data-path="sostenibilidad-y-trazabilidad" href="#">Sostenibilidad &amp; Trazabilidad</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" data-path="certificaciones-y-halal" href="#">Certificaciones &amp; Halal</a><a class="px-3 py-2 rounded-lg text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors" data-path="portal-b2b-y-cotizaciones" href="#">Portal B2B &amp; Cotizaciones</a></nav><div class="flex items-center gap-space-md"><button class="hidden sm:inline-flex items-center gap-space-xs px-3 py-1.5 rounded-lg border border-secondary-fixed-dim/40 bg-surface-container-low text-primary hover:bg-surface-container transition-colors text-label-md font-label-md"><span class="material-symbols-outlined text-secondary text-[18px]">smart_toy</span><span class="font-semibold">Castilla AI Assist</span><span class="text-[10px] uppercase px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed font-bold">EN/AR</span></button><a class="inline-flex items-center gap-space-xs px-4 py-2 rounded bg-primary text-on-primary hover:bg-primary-container transition-all font-label-md text-label-md shadow-[0_2px_8px_-2px_rgba(13,71,43,0.3)] ring-1 ring-secondary/30" data-path="solicitar-cotizacion-b2b" href="#"><span class="material-symbols-outlined text-[18px] text-secondary-fixed">point_of_sale</span><span class="font-bold tracking-wide uppercase">Solicitar Cotización</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-[120px] bg-surface min-h-[calc(100vh-120px)]"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO SECTION -->
+<section class="relative w-full bg-surface-container-lowest overflow-hidden">
+<div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#0d472b_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="max-w-[1440px] mx-auto px-gutter py-space-xl relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Text Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase tracking-widest shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">workspace_premium</span>
+<span>Agroexportación Premium • Colombia to UAE &amp; GCC Markets</span>
+</div>
+<h1 class="font-display-lg text-headline-lg lg:text-display-lg text-primary font-bold tracking-tight text-balance leading-tight">
+            De la biodiversidad de Colombia a las mesas más exigentes de <span class="text-secondary italic">Medio Oriente</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Exportadores directos de superfrutas y derivados tropicales de alta gama: Pulpas Asépticas Congeladas, Polvos Liofilizados Clean Label y Mermeladas Gourmet. Cadena de frío certificada de origen andino al puerto de Jebel Ali, Dubái.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md pt-2">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-all font-label-lg text-label-lg uppercase tracking-wider font-bold shadow-md hover:shadow-lg" href="#cotizacion-b2b">
+<span class="material-symbols-outlined text-[20px]">directions_boat</span>
+<span>Solicitar Cotización B2B</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded bg-surface-container-high text-primary hover:bg-surface-variant transition-all font-label-lg text-label-lg uppercase tracking-wider font-bold" href="#catalogo">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>Catálogo &amp; Fichas Técnicas</span>
+</a>
+</div>
+<!-- Trust Subtext -->
+<div class="flex items-center gap-4 text-on-surface-variant font-label-md text-label-md pt-1">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">check_circle</span>
+<span>Incoterms CIF Jebel Ali / FOB</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">gavel</span>
+<span>Alineación GSO / MoIAT</span>
+</div>
+</div>
+</div>
+<!-- Media Column -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-xl overflow-hidden shadow-2xl bg-surface-container">
+<img alt="Castilla International Fruits - Purees &amp; Tropical Produce" class="w-full h-[460px] object-cover object-center transform hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNimzH8aB0yrpBmieL7iuQ4p68QWOP4HBQxZz2ILBT3IciCG6YXzuweFdAPhPgrfjScAa9Roo4xqwBxnOIkD0d4l8kOmUphAG0Wr2pzhV4TzkbHspjsXGJznGiIv1PS9IO27YCr72rx1JZHtzHuqH7bu0EVFNWe76iBuhR15ROfMVOQ1_ikohVXNZhh70yOzzSftOHo4wY6GFvokHCg9rK-6ZyMUuJiLTtvC7rH-Y4uJEht9X7IGxuSw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/10 to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-lg bg-surface-container-lowest/90 backdrop-blur-md shadow-lg flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Línea Insignia</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">Pulpas Puras &amp; Frutas Exóticas</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Maracuyá, Pitahaya Amarilla, Lulo y Uchuva Grado Exportación</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">ac_unit</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Key Metrics Bar -->
+<div class="mt-space-xl p-space-md lg:p-space-lg rounded-xl bg-surface-container shadow-xl">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-lg">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">verified</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold text-primary">100% Halal</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">UAE MoIAT &amp; ESMA Compliant</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">thermostat</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold text-primary">-18°C Monitoreado</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">IoT Telemetría 24/7 en Reefer</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">sailing</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold text-primary">21 Días Tránsito</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Buenaventura / Cartagena → Jebel Ali</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-secondary-fixed text-[22px]">hotel</span>
+</div>
+<div>
+<div class="font-title-md text-title-md font-bold text-primary">40+ Socios HORECA</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Dubái, Abu Dabi, Doha &amp; Riad</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: BRAND NARRATIVE & VALUE PILLARS -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter flex flex-col gap-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-end">
+<div class="lg:col-span-7 flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Quiénes Somos • Herencia Agrícola</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">
+            Sinergia entre el Trópico Colombiano y la Sofisticación de Dubái
+          </h2>
+</div>
+<div class="lg:col-span-5">
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Cultivamos en las altitudes privilegiadas del Eje Cafetero, Valle del Cauca y Antioquia. Mediante procesos asépticos y criogénicos de última generación, suministramos materias primas frutícolas sin precedentes para la alta hostelería y la industria alimentaria del Golfo Pérsico.
+          </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pillar 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">eco</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Origen Seleccionado a Mano</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Recolección artesanal en el punto exacto de maduración. Análisis individual de grados Brix, acidez titulable y perfil organoléptico superior.
+          </p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+            Trazabilidad por Finca →
+          </div>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">severe_cold</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Logística Criogénica &amp; Aséptica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Preservamos nutrientes, texturas y notas aromáticas mediante congelación rápida individual (IQF) y empaque aséptico sin preservantes químicos.
+          </p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+            Cold-Chain Verified →
+          </div>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">gavel</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Halal &amp; Food Safety UAE</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Plantas avaladas bajo esquemas ISO 22000, FSSC 22000 y acreditación Halal con reconocimiento pleno ante ESMA y MoIAT en los Emiratos.
+          </p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+            Auditoría Abierta →
+          </div>
+</div>
+<!-- Pillar 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">apartment</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Soporte Dedicado en EAU</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Presencia comercial permanente en Dubái (DMCC JAFZA). Liquidaciones directas en AED/USD, despacho aduanero y muestreo express.
+          </p>
+<div class="mt-auto pt-2 font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">
+            DMCC Free Zone Hub →
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: PRODUCT PORTFOLIO -->
+<section class="w-full bg-surface-container-low py-space-xl" id="catalogo">
+<div class="max-w-[1440px] mx-auto px-gutter flex flex-col gap-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Catálogo Institucional • Grado Gastronómico</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">Portafolio de Exportación de Alta Gama</h2>
+</div>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap items-center gap-2 p-1.5 rounded-lg bg-surface-container" id="portfolio-tabs">
+<button class="px-4 py-2 rounded text-label-md font-label-md font-bold transition-all bg-primary text-on-primary shadow-sm" onclick="filterCategory('all', this)">Todos</button>
+<button class="px-4 py-2 rounded text-label-md font-label-md font-bold transition-all text-on-surface-variant hover:text-primary" onclick="filterCategory('pulpas', this)">Pulpas Congeladas -18°C</button>
+<button class="px-4 py-2 rounded text-label-md font-label-md font-bold transition-all text-on-surface-variant hover:text-primary" onclick="filterCategory('polvos', this)">Polvos Clean Label</button>
+<button class="px-4 py-2 rounded text-label-md font-label-md font-bold transition-all text-on-surface-variant hover:text-primary" onclick="filterCategory('mermeladas', this)">Mermeladas Gourmet</button>
+</div>
+</div>
+<!-- Product Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="product-grid">
+<!-- Product 1: Pulpa Maracuyá -->
+<div class="product-item pulpas flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up of fresh yellow passionfruit cut in half showing seeds, pulp, and glistening golden juice with high end studio lighting on white marble background, luxury editorial photography, pristine commercial food shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf3wncNSrsancOmsAXOHaSheuSsnPp9X67kdPeFDjXXLhP8aY7VzevWQjDzDgDd0kkVKOu9aglxi7E4NyfvGvrK_rWX0yIZ-gMmQ2Cibs0u_knyl76MPQuUeBx8UZ1eh4b5AMv_X70ck9wthawbyPq6OUDSl2sBPvLSJJx2embA5q3CzRoYPvz6BFaq9qHNVBI-UOxVEm0JvWIxDvmv-mDKx_I6Lz2kvLTp2sh6y_AvMfqdW3t4Uz1uQ"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+              -18°C IQF Congelado
+            </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              14-16° Brix
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span>Pure Fruit Puree</span>
+<span>HS: 2008.99.90</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Maracuyá Puro (Golden Passionfruit)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              100% Pura pulpa natural sin semillas ni azúcares añadidos. Acidez vibrante y aroma tropical penetrante. Tambores asépticos de 200kg y packs de 1kg para cadenas de hoteles.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Cajas 10x1kg • Tambores 200kg</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm font-bold uppercase transition-colors" onclick="addToQuote('Maracuyá Puro IQF')">
+                + Cotizar
+              </button>
+</div>
+</div>
+</div>
+<!-- Product 2: Pulpa Pitahaya Amarilla -->
+<div class="product-item pulpas flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Exotic Colombian yellow dragonfruit pitahaya sliced with translucent white pulp and tiny black seeds on white marble luxury surface with soft natural lighting, high end culinary presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCquBlJOyfzB_ZRkBbGaJMGIJg9P3PSOSc1dzjp0SzcuWCZiimfFxS-MXBfGca__WwIcmxFU4h3fEsiM7dR_mKtIL_o-EAGyzKy3U21xswwb4eIevKZGbjQ9o6W0F6oWfH-M9ZEFDDwG9bX0v_HSyQH63HOEkPZzbLpUpoV8WCGZactu_ua_jTS94VH75hRvE3GckfAoVnRN8DG5dXHlCb15Hwt86aXB04cF6nIN8d_Maolz_MmI1vtfQ"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+              -18°C IQF Congelado
+            </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              16-18° Brix
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span>Superfruit Puree</span>
+<span>HS: 2008.99.90</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Pitahaya Amarilla (Yellow Dragonfruit)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Reconocida por su delicada dulzura floral y propiedades digestivas. Idónea para boles gourmet, mocktails exclusivos de autor y repostería en Dubái Marina.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Bloques Congelados 5kg • 1kg</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm font-bold uppercase transition-colors" onclick="addToQuote('Pitahaya Amarilla Puree')">
+                + Cotizar
+              </button>
+</div>
+</div>
+</div>
+<!-- Product 3: Polvo Clean Label Mango -->
+<div class="product-item polvos flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Fine vibrant golden mango powder spooned over crystal clear bowl with ripe Colombian mango chunks beside it on marble studio setting, soft golden hour rim light, pristine ingredient shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9D0y8q6DNgvu8so_J1tXLftr9ItAeyNN5KJFAeJLZ8dR6xG88Gz9P_eXDAMfYB6L7g9F8KNiAiSSIO90DzCFNubwZzjjQhxb6bhTi0BzLc25oD0gQdUl4ANTes52qirN2riKIYGhQR7DcjVDS9o5cMQV5HMVbYXFtOkStFvHfwbrqBUZWoBSymL0-Cs2WQkyFd3iS9F3p6i_hRBzSw32nbvIRszzvo42a6O2Bdz4_MJZ1tCEUaSnk-A"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+              Clean Label Liofilizado
+            </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              100% Soluble
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span>Spray / Freeze Dried</span>
+<span>HS: 1106.30.00</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Polvo de Mango Magdalena</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Sin maltodextrina añadida ni colorantes artificiales. Conserva color dorado vivo, aroma terpénico intacto y solubilidad inmediata para chocolatería y coctelería HORECA.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Bolsas trilaminadas 5kg / 25kg</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm font-bold uppercase transition-colors" onclick="addToQuote('Polvo de Mango Clean Label')">
+                + Cotizar
+              </button>
+</div>
+</div>
+</div>
+<!-- Product 4: Polvo Uchuva -->
+<div class="product-item polvos flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Golden physalis goldenberry powder in elegant porcelain cup alongside fresh paper-lantern wrapped uchuva fruits from Colombian high Andes, refined warm studio lighting, gourmet culinary ingredient." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9ONN3RD9CS4Y737oaJrPyWGSNazcpuWUJhiCskezvAYR5qAa9X48QanE1oL1kAyCNL_pi87dSg_Pir1AC_bLAI0ALuY8eqvmFmpUvBaxlRUPUpjBKTjKGpIGy5aDU1J0kKJht5rD-UHAPy2lKT1UmNZ590Ve5Yj-LAhWmpVK4mxhnMFfAhmMpCNRHvoz8TQ9Qs2TgSyvE3WPynJq_4pho-glHm5x4cGhbRmKoXqFwGXkaZF3N4XLWSQ"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+              Superalimento Andino
+            </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              Alto en Vit C
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span>Freeze Dried Powder</span>
+<span>HS: 1106.30.00</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Polvo de Uchuva (Golden Berry)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Intenso perfil agridulce andino. Muy demandado por chefs de vanguardia en Dubái para texturas de alta repostería, macarons, glaseados y mezclas funcionales.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Cajas al vacío 10kg</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm font-bold uppercase transition-colors" onclick="addToQuote('Polvo de Uchuva Liofilizado')">
+                + Cotizar
+              </button>
+</div>
+</div>
+</div>
+<!-- Product 5: Mermelada Maracuyá Jengibre -->
+<div class="product-item mermeladas flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Hexagonal crystal jar with gold lid containing rich amber passion fruit and ginger gourmet artisanal jam, warm luxury hotel breakfast setting with sunlight, deep emerald accents in background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHxBkfBRnOaQmkFF0hjVht3iMd8ZOp6YPyim3hK_UedF5zPfvR0DwCczPIZzjA7TA8Lx-ahLkiu0Sdz2R4DTLkXPLQOdv23L3pxaCbHu7ek4PglN0uk81CvxkpdBjZpTEexDo1oY6nl_i6xGeH8FUK1VjT0orp8Fy6l58xHnHeJmrq_6yl2V8lgBNpQNd8uWyamW3lrPWvEvtB7tZcCFQHvVzLyAKvIAcBA8u3eanO_G8f60X1HL9sPA"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+              Línea HORECA De Lujo
+            </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              65% Fruta Real
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span>Gourmet Fruit Spread</span>
+<span>HS: 2007.99.10</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Maracuyá &amp; Jengibre Andino</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Elaboración artesanal en calderos de cobre. Presentación en frascos individuales de 42g para buffet de 5 estrellas o baldes gastronómicos de 10kg para panadería fina.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Frascos 240g • Baldes 10kg</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm font-bold uppercase transition-colors" onclick="addToQuote('Mermelada Maracuyá-Jengibre')">
+                + Cotizar
+              </button>
+</div>
+</div>
+</div>
+<!-- Product 6: Pulpa Lulo (Naranjilla) -->
+<div class="product-item pulpas flex flex-col rounded-xl overflow-hidden bg-surface-container-lowest shadow-md hover:shadow-xl transition-all">
+<div class="relative h-60 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Cut emerald green Colombian lulo fruit showing gelatinous green pulp and seeds on white marble background with fresh water droplets, macro studio lighting, pristine luxury food style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkZK4xBm9Zybh-xAosPNn-eVZrcEhtFyqtpPfm3cJFh-FUbbMIhcg7eTNb0wIr-jYBwCDvqnKsLyuaiL2OhoQ8wv05KF4n7i2AHfftdjQghumCZ3ZrMCdl33DD3f5JX1dCANC5n4eKPoMEyKC2vJXW_v_gONZrQuj4HBEl6HSjOXAGF2OGR3UNRTFP0wxXoEYhVZ8vfQ4QolkK6xTfadXJvloADJJfXnqjO2lrZD2WEEvluzV898XOLg"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary text-on-primary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+              -18°C IQF Congelado
+            </div>
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              10-12° Brix
+            </div>
+</div>
+<div class="p-space-lg flex flex-col flex-grow gap-space-xs">
+<div class="flex items-center justify-between text-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider">
+<span>Pure Fruit Puree</span>
+<span>HS: 2008.99.90</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Lulo Andino (Naranjilla)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Auténtico tesoro botánico de Colombia. Perfil cítrico complejo entre kiwi, piña y limón verde. Perfecta base para limonadas exóticas y sorbetes de alta gama.
+            </p>
+<div class="mt-4 pt-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline font-semibold">Cajas 10x1kg • Tambor 200kg</span>
+<button class="px-3 py-1.5 rounded bg-surface-container-high hover:bg-primary hover:text-on-primary text-primary font-label-sm text-label-sm font-bold uppercase transition-colors" onclick="addToQuote('Pulpa de Lulo IQF')">
+                + Cotizar
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: QUALITY, HALAL COMPLIANCE & TRACEABILITY -->
+<section class="w-full bg-primary text-on-primary py-space-xl relative overflow-hidden">
+<div class="absolute right-0 top-0 w-96 h-96 bg-primary-container rounded-full blur-3xl opacity-30 pointer-events-none"></div>
+<div class="max-w-[1440px] mx-auto px-gutter relative z-10 flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm uppercase font-bold tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Acreditación Internacional</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-surface-bright">
+            Inocuidad Rigurosa • Certificación Halal para EAU &amp; Golfo
+          </h2>
+<p class="font-body-md text-body-md text-surface-container-high/90 mt-2">
+            Nuestros procesos de desinfección, despulpado criogénico y embalaje aséptico operan bajo estricta conformidad con las normas de los Emiratos Árabes Unidos (ESMA / MoIAT) y normativas sanitarias globales.
+          </p>
+</div>
+<div class="p-4 rounded-xl bg-primary-container/80 backdrop-blur-md shadow-lg flex items-center gap-4">
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm font-bold text-secondary-fixed">100% Halal</div>
+<div class="font-label-sm text-label-sm text-surface-container-high">Emirates Authority Aligned</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[28px]">approval_delegation</span>
+</div>
+</div>
+</div>
+<!-- Compliance Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-lg bg-primary-container/50 shadow-sm flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[32px]">verified</span>
+<div class="font-title-md text-title-md font-bold text-surface-bright">Halal UAE Compliance</div>
+<p class="font-body-sm text-body-sm text-surface-container-high/80">Certificación emitida por entidad acreditada ante MoIAT para entrada directa sin restricciones a Jebel Ali Port.</p>
+</div>
+<div class="p-space-md rounded-lg bg-primary-container/50 shadow-sm flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[32px]">shield_with_heart</span>
+<div class="font-title-md text-title-md font-bold text-surface-bright">ISO 22000 &amp; HACCP</div>
+<p class="font-body-sm text-body-sm text-surface-container-high/80">Control total de puntos críticos microbiológicos y físicos desde el despulpado hasta el sellado aséptico.</p>
+</div>
+<div class="p-space-md rounded-lg bg-primary-container/50 shadow-sm flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[32px]">potted_plant</span>
+<div class="font-title-md text-title-md font-bold text-surface-bright">GlobalG.A.P. en Fincas</div>
+<p class="font-body-sm text-body-sm text-surface-container-high/80">Manejo seguro de cultivos en Colombia, protección de aguas y bienestar laboral de las familias campesinas.</p>
+</div>
+<div class="p-space-md rounded-lg bg-primary-container/50 shadow-sm flex flex-col gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[32px]">assignment_turned_in</span>
+<div class="font-title-md text-title-md font-bold text-surface-bright">Codex Alimentarius &amp; FDA</div>
+<p class="font-body-sm text-body-sm text-surface-container-high/80">Acreditación fitosanitaria del ICA colombiano homologada ante el Ministerio de Cambio Climático de EAU (MoCCaE).</p>
+</div>
+</div>
+<!-- Batch Traceability Interactive Simulator -->
+<div class="rounded-xl bg-surface-container-lowest text-on-surface p-space-lg shadow-2xl">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_scanner</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Simulador de Trazabilidad de Lote Reefer</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ingrese un código de lote de exportación para auditar la cadena de suministro en tiempo real.</p>
+</div>
+<div class="flex items-center gap-2">
+<input class="px-3 py-2 rounded bg-surface-container-low text-primary font-mono text-body-sm font-semibold focus:outline-none focus:bg-surface-container" id="trace-input" type="text" value="CST-DXB-2025-04"/>
+<button class="px-4 py-2 rounded bg-primary text-on-primary font-label-md text-label-md font-bold uppercase transition-all shadow-sm hover:shadow" onclick="runTraceability()">
+              Auditar Lote
+            </button>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low" id="trace-result">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-space-md">
+<div>
+<div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Producto &amp; Especie</div>
+<div class="font-title-md text-title-md font-bold text-primary">Maracuyá IQF 100% Puro</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Finca &amp; Origen</div>
+<div class="font-title-md text-title-md font-bold text-primary">Hda. Los Andes • Valle del Cauca</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Grados Brix Medidos</div>
+<div class="font-title-md text-title-md font-bold text-secondary">15.4° Brix (Óptimo)</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Cadena de Frío Media</div>
+<div class="font-title-md text-title-md font-bold text-primary">-19.8°C (Constante)</div>
+</div>
+<div>
+<div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Status en Naviera</div>
+<div class="font-title-md text-title-md font-bold text-primary flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span>Arribo Jebel Ali</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: AI B2B TRADE ASSISTANT & LOCALIZATION ENGINE -->
+<section class="w-full bg-surface py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left: AI Trade Assistant Demo -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+<span>Herramienta Tecnológica Castilla AI</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">Castilla B2B Trade Intelligence AI</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+              Asistente de compras internacionales en tiempo real para resolver requisitos arancelarios, fichas técnicas, normativas sanitarias y documentación de embarque en Español, Inglés y Árabe.
+            </p>
+</div>
+<!-- Quick Prompts -->
+<div class="flex flex-wrap gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-label-sm font-label-sm font-semibold transition-colors" onclick="simulateAI('moq')">
+              ¿MOQ para pulpa de maracuyá en Jebel Ali?
+            </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-label-sm font-label-sm font-semibold transition-colors" onclick="simulateAI('halal')">
+              Descargar Certificado Halal en PDF
+            </button>
+<button class="px-3 py-1.5 rounded-full bg-surface-container text-primary hover:bg-secondary-fixed hover:text-on-secondary-fixed text-label-sm font-label-sm font-semibold transition-colors" onclick="simulateAI('transit')">
+              Tiempo tránsito Cartagena - Dubái
+            </button>
+</div>
+<!-- Chat Window Box -->
+<div class="rounded-xl bg-surface-container-lowest shadow-lg overflow-hidden flex flex-col">
+<div class="p-3 bg-primary text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">psychology</span>
+<span class="font-label-md text-label-md font-bold">Castilla Trade AI Desk • Live Assistant</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-secondary-fixed text-[10px] font-bold uppercase">Multilingual Active</span>
+</div>
+<div class="p-4 h-64 overflow-y-auto flex flex-col gap-3 font-body-sm text-body-sm bg-surface-container-lowest" id="ai-chat-box">
+<!-- AI Initial message -->
+<div class="flex items-start gap-2.5">
+<div class="w-7 h-7 rounded-full bg-primary text-secondary-fixed flex items-center justify-center flex-shrink-0 text-[14px]">
+<span class="material-symbols-outlined text-[16px]">support_agent</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low text-on-surface max-w-[85%]">
+<p class="font-semibold text-primary">Marhaban • Bienvenido a Castilla International Trade AI.</p>
+<p class="mt-1">Puedo calcular cubicaje de contenedores Reefer de 40ft, cotizar fletes CIF hacia el Puerto de Jebel Ali o emitir la ficha técnica que requiere su departamento de compras.</p>
+</div>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low flex items-center gap-2">
+<input class="flex-grow px-3 py-2 rounded bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none shadow-sm" id="ai-user-input" placeholder="Pregunte en Español, English o العربية..." type="text"/>
+<button class="p-2 rounded bg-primary text-on-primary hover:bg-primary-container transition-colors shadow" onclick="sendUserAI()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right: Dynamic Incoterms & Freight Calculator -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-lg flex flex-col gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Calculadora Comercial B2B</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Simulador de Costo CIF Dubái vs. FOB Colombia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Estime de manera instantánea el volumen por pallet, peso neto y cotización indicativa con conversión de divisa.</p>
+</div>
+<!-- Currency Selector Bar -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container">
+<span class="font-label-md text-label-md font-bold text-primary">Moneda de Liquidación:</span>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-bold text-label-sm" id="btn-usd" onclick="setCurrency('USD')">USD ($)</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-primary font-bold text-label-sm" id="btn-aed" onclick="setCurrency('AED')">AED (د.إ)</button>
+</div>
+</div>
+<!-- Form parameters -->
+<div class="space-y-3 font-body-sm text-body-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Línea de Fruta Seleccionada</label>
+<select class="w-full px-3 py-2 rounded bg-surface-container-low text-primary font-body-sm font-medium focus:outline-none" id="calc-product" onchange="calculateQuote()">
+<option value="4200">Maracuyá Puro Congelado IQF ($4,200 / MT)</option>
+<option value="5100">Pitahaya Amarilla Pura IQF ($5,100 / MT)</option>
+<option value="9800">Polvo de Mango Liofilizado Clean Label ($9,800 / MT)</option>
+<option value="3900">Mermelada Gourmet Maracuyá-Jengibre ($3,900 / MT)</option>
+</select>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Volumen Despacho (MT)</label>
+<input class="w-full px-3 py-2 rounded bg-surface-container-low text-primary font-body-sm font-semibold focus:outline-none" id="calc-volume" max="100" min="1" onchange="calculateQuote()" onkeyup="calculateQuote()" type="number" value="20"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface font-semibold mb-1">Incoterm Seleccionado</label>
+<select class="w-full px-3 py-2 rounded bg-surface-container-low text-primary font-body-sm font-medium focus:outline-none" id="calc-incoterm" onchange="calculateQuote()">
+<option value="cif">CIF Jebel Ali Port (Dubái)</option>
+<option value="fob">FOB Puerto de Buenaventura</option>
+<option value="dap">DAP Dubai DMCC Warehouse</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Calculation Output Card -->
+<div class="p-4 rounded-lg bg-surface-container-high flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-outline font-bold">Subtotal Mercancía:</span>
+<span class="font-title-md text-title-md font-bold text-primary" id="out-subtotal">$84,000 USD</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-outline font-bold">Flete Marítimo Reefer &amp; Seguro:</span>
+<span class="font-title-md text-title-md font-bold text-primary" id="out-freight">$6,400 USD</span>
+</div>
+<div class="pt-2 mt-1 flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">Inversión Indicativa:</span>
+<div class="font-label-sm text-label-sm text-secondary font-bold" id="out-currency-note">Tasa fijada 1 USD = 3.67 AED</div>
+</div>
+<div class="text-right">
+<div class="font-headline-lg text-headline-lg font-bold text-secondary" id="out-total">$90,400 USD</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Capacidad: ~24 Pallets Estándar</div>
+</div>
+</div>
+</div>
+<a class="w-full py-3 rounded bg-primary text-on-primary hover:bg-primary-container text-center font-label-md text-label-md font-bold uppercase tracking-wider transition-colors shadow" href="#cotizacion-b2b">
+              Fijar Tarifa en Solicitud Formal Proforma →
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: B2B LEAD GENERATION FORM -->
+<section class="w-full bg-surface-container-lowest py-space-xl" id="cotizacion-b2b">
+<div class="max-w-[1440px] mx-auto px-gutter">
+<div class="p-space-lg lg:p-space-xl rounded-2xl bg-surface-container-low shadow-xl">
+<div class="max-w-3xl mx-auto text-center flex flex-col gap-space-xs mb-space-lg">
+<div class="inline-flex items-center justify-center gap-2 self-center px-3 py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm uppercase font-bold tracking-widest">
+<span class="material-symbols-outlined text-[16px]">fact_check</span>
+<span>Mesa de Compras Directas</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">
+            Solicitud Formal de Cotización Proforma B2B
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Atención prioritaria para directores de compras, importadores mayoristas de EAU, distribuidores HORECA y cadenas de supermercados gourmet en el Golfo.
+          </p>
+</div>
+<form class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-space-md" id="b2b-form" onsubmit="handleFormSubmit(event)">
+<!-- Company & Country -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Nombre de la Empresa Importadora *</label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none focus:bg-surface-bright" placeholder="Ej: Gulf Luxury Gourmet LLC" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">País &amp; Sede Comercial *</label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none" required="">
+<option value="UAE">United Arab Emirates (Dubái / Abu Dabi)</option>
+<option value="KSA">Kingdom of Saudi Arabia (Riyadh / Jeddah)</option>
+<option value="QAT">Qatar (Doha)</option>
+<option value="KWT">Kuwait</option>
+<option value="OMN">Oman (Muscat)</option>
+<option value="BHR">Bahrain</option>
+<option value="OTHER">Otro Mercado Internacional</option>
+</select>
+</div>
+<!-- Buyer Type & Line -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Tipo de Comprador / Actividad *</label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none" required="">
+<option value="horeca">Distribuidor Especializado HORECA</option>
+<option value="hotel">Cadena Hotelera 5 Estrellas / Resort</option>
+<option value="retail">Supermercados Gourmet / Retail</option>
+<option value="industry">Industria Láctea / Bebidas / Confitería</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Línea de Interés Primaria *</label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none" id="form-selected-product" required="">
+<option value="pulpas">Pulpas Asépticas Congeladas IQF (-18°C)</option>
+<option value="polvos">Polvos Saborizantes Clean Label (Liofilizados)</option>
+<option value="mermeladas">Mermeladas Gourmet &amp; Spreads de Autor</option>
+<option value="mix">Contenedor Mixto (Consolidado Variado)</option>
+</select>
+</div>
+<!-- Volume & Destination Port -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Volumen Estimado por Despacho *</label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none" required="">
+<option value="fcl40">1 Contenedor 40ft High Cube Reefer (~24MT)</option>
+<option value="fcl20">1 Contenedor 20ft Reefer (~12MT)</option>
+<option value="lcl_air">Carga Aérea Express (LCL 500kg - 2MT)</option>
+<option value="contract">Contrato Anual Programado Multicontenedor</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Puerto / Terminal de Destino *</label>
+<select class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none" required="">
+<option value="jebel_ali">Port of Jebel Ali • Dubai (Recomendado)</option>
+<option value="khalifa">Khalifa Port • Abu Dhabi</option>
+<option value="dxb_air">Dubai International Cargo Terminal (DXB Air)</option>
+<option value="hamad">Hamad Port • Qatar</option>
+<option value="jeddah">Jeddah Islamic Port • KSA</option>
+</select>
+</div>
+<!-- Contact Email & Phone -->
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Correo Electrónico Corporativo *</label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none focus:bg-surface-bright" placeholder="purchasing@luxuryhospitality.ae" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Teléfono Directo / WhatsApp Comercial</label>
+<input class="w-full px-3.5 py-2.5 rounded bg-surface-container-lowest text-on-surface font-body-sm shadow-sm focus:outline-none focus:bg-surface-bright" placeholder="+971 50 000 0000" type="text"/>
+</div>
+<!-- Special Labeling Requirements -->
+<div class="md:col-span-2">
+<label class="block font-label-sm text-label-sm font-semibold text-primary mb-1">Requerimientos de Rotulado &amp; Etiquetado Especial</label>
+<div class="flex flex-wrap gap-4 pt-1 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary" type="checkbox"/>
+<span>Etiquetado Bilingüe Árabe / Inglés (GSO Compliance)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary" type="checkbox"/>
+<span>Servicio de Marca Privada (Private Label / OEM)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="rounded text-primary" type="checkbox"/>
+<span>Certificado Fitosanitario Físico con Legalización</span>
+</label>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="md:col-span-2 pt-2">
+<button class="w-full py-4 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed transition-all font-label-lg text-label-lg font-bold uppercase tracking-wider shadow-md hover:shadow-lg flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Generar Solicitud de Cotización Proforma B2B</span>
+</button>
+<div class="mt-2 text-center font-label-sm text-label-sm text-on-surface-variant">
+              Tiempo medio de respuesta formal con Ficha Técnica: &lt; 4 horas hábiles (Horario Dubái GMT+4).
+            </div>
+</div>
+</form>
+<div class="hidden max-w-2xl mx-auto mt-6 p-4 rounded-lg bg-tertiary-container text-on-tertiary font-body-md text-center" id="form-success">
+          ¡Solicitud Proforma Registrada con Éxito! Nuestro Key Account Manager para EAU le ha enviado el dossier y se contactará vía WhatsApp/Correo en breve.
+        </div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: LOGISTICS ROUTE & BILATERAL PRESENCE -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-[1440px] mx-auto px-gutter flex flex-col gap-space-xl">
+<div class="text-center max-w-2xl mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Cadena de Suministro Soberana</span>
+<h2 class="font-headline-lg text-headline-lg font-bold text-primary">Ruta Logística Colombia → Golfo Pérsico</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Supervisión integral de extremo a extremo, desde la cordillera andina hasta los hubs logísticos ultramodernos de los EAU.</p>
+</div>
+<!-- Logistics Flow Steps -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-label-sm">1</div>
+<div class="font-headline-sm text-title-md font-bold text-primary">Cosecha Andina</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Fincas certificadas en Valle del Cauca, Antioquia y Eje Cafetero.</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-label-sm">2</div>
+<div class="font-headline-sm text-title-md font-bold text-primary">Proceso Aséptico</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Congelación criogénica IQF y empaque estéril bajo ISO 22000.</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-label-sm">3</div>
+<div class="font-headline-sm text-title-md font-bold text-primary">Embarque Marítimo</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Zarpe en Puerto de Buenaventura / Cartagena en Reefers con atmósfera controlada.</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-label-sm">4</div>
+<div class="font-headline-sm text-title-md font-bold text-primary">Arribo Jebel Ali</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Desaduanamiento preferencial MoIAT y descarga en Dubai JAFZA.</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-bold text-label-sm">5</div>
+<div class="font-headline-sm text-title-md font-bold text-primary">Distribución UAE</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Entrega directa en hoteles 5 estrellas y plantas de procesamiento del Golfo.</div>
+</div>
+</div>
+<!-- Bilateral HQ Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Colombia HQ -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">terrain</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Centro de Operaciones Agrícolas</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Castilla Agroindustrial Colombia</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Parque Agroexportador • Km 14 Vía Palmira, Valle del Cauca, Colombia.<br/>
+              Planta certificada para exportación fitosanitaria ICA N° 76-889.
+            </p>
+<div class="pt-2 font-label-sm text-label-sm text-primary font-bold">
+              Despachos directos desde Buenaventura • Certificados de Origen EUR.1 / GCC
+            </div>
+</div>
+</div>
+<!-- Dubai Hub -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">domain</span>
+</div>
+<div class="space-y-1">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Oficina de Comercio &amp; Hub GCC</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Castilla Fruits DMCC Trade Office</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              DMCC Business Centre, Level 42-B, Silver Tower, JLT • Dubai, United Arab Emirates.<br/>
+              Licencia de Importación &amp; Re-exportación de Alimentos DED • Free Zone.
+            </p>
+<div class="pt-2 font-label-sm text-label-sm text-primary font-bold">
+              Atención ejecutiva en Inglés y Árabe • Facturación local en Dirhams (AED)
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  let currentCurrency = 'USD';
+  const aedRate = 3.6725;
+
+  function setCurrency(curr) {
+    currentCurrency = curr;
+    const btnUsd = document.getElementById('btn-usd');
+    const btnAed = document.getElementById('btn-aed');
+    
+    if (curr === 'USD') {
+      btnUsd.className = "px-3 py-1 rounded bg-primary text-on-primary font-bold text-label-sm";
+      btnAed.className = "px-3 py-1 rounded text-on-surface-variant hover:text-primary font-bold text-label-sm";
+    } else {
+      btnAed.className = "px-3 py-1 rounded bg-primary text-on-primary font-bold text-label-sm";
+      btnUsd.className = "px-3 py-1 rounded text-on-surface-variant hover:text-primary font-bold text-label-sm";
+    }
+    calculateQuote();
+  }
+
+  function calculateQuote() {
+    const productPrice = parseFloat(document.getElementById('calc-product').value) || 4200;
+    const volume = parseFloat(document.getElementById('calc-volume').value) || 1;
+    const incoterm = document.getElementById('calc-incoterm').value;
+
+    let subtotalUSD = productPrice * volume;
+    let freightUSD = 0;
+
+    if (incoterm === 'cif') {
+      freightUSD = 320 * volume; // freight rate per ton in Reefer
+    } else if (incoterm === 'dap') {
+      freightUSD = 450 * volume; // inland delivery Dubai included
+    } else {
+      freightUSD = 50 * volume; // port loading only FOB
+    }
+
+    let totalUSD = subtotalUSD + freightUSD;
+
+    const outSubtotal = document.getElementById('out-subtotal');
+    const outFreight = document.getElementById('out-freight');
+    const outTotal = document.getElementById('out-total');
+    const outNote = document.getElementById('out-currency-note');
+
+    if (currentCurrency === 'USD') {
+      outSubtotal.textContent = '$' + subtotalUSD.toLocaleString() + ' USD';
+      outFreight.textContent = '$' + freightUSD.toLocaleString() + ' USD';
+      outTotal.textContent = '$' + totalUSD.toLocaleString() + ' USD';
+      outNote.textContent = 'Cotización FOB/CIF en Dólares Americanos';
+    } else {
+      let subAED = Math.round(subtotalUSD * aedRate);
+      let frtAED = Math.round(freightUSD * aedRate);
+      let totAED = Math.round(totalUSD * aedRate);
+      outSubtotal.textContent = subAED.toLocaleString() + ' AED';
+      outFreight.textContent = frtAED.toLocaleString() + ' AED';
+      outTotal.textContent = totAED.toLocaleString() + ' AED';
+      outNote.textContent = 'Paridad bancaria oficial fijada 1 USD = 3.67 AED';
+    }
+  }
+
+  function filterCategory(cat, element) {
+    const tabs = document.getElementById('portfolio-tabs').children;
+    for (let t of tabs) {
+      t.className = "px-4 py-2 rounded text-label-md font-label-md font-bold transition-all text-on-surface-variant hover:text-primary";
+    }
+    element.className = "px-4 py-2 rounded text-label-md font-label-md font-bold transition-all bg-primary text-on-primary shadow-sm";
+
+    const items = document.querySelectorAll('.product-item');
+    items.forEach(item => {
+      if (cat === 'all' || item.classList.contains(cat)) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  function addToQuote(productName) {
+    const sel = document.getElementById('form-selected-product');
+    if (productName.includes('Polvo')) {
+      sel.value = 'polvos';
+    } else if (productName.includes('Mermelada')) {
+      sel.value = 'mermeladas';
+    } else {
+      sel.value = 'pulpas';
+    }
+    const target = document.getElementById('cotizacion-b2b');
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function runTraceability() {
+    const val = document.getElementById('trace-input').value.trim();
+    const res = document.getElementById('trace-result');
+    res.innerHTML = `
+      <div class="grid grid-cols-2 md:grid-cols-5 gap-space-md animate-pulse">
+        <div>
+          <div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Producto &amp; Especie</div>
+          <div class="font-title-md text-title-md font-bold text-primary">Maracuyá IQF 100% Puro</div>
+        </div>
+        <div>
+          <div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Lote Registrado</div>
+          <div class="font-title-md text-title-md font-bold text-primary">${val || 'CST-DXB-2025'}</div>
+        </div>
+        <div>
+          <div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Brix Certificado</div>
+          <div class="font-title-md text-title-md font-bold text-secondary">15.4&deg; Brix (Aprobado)</div>
+        </div>
+        <div>
+          <div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Temperatura Reefer</div>
+          <div class="font-title-md text-title-md font-bold text-primary">-20.1&deg;C (Óptima)</div>
+        </div>
+        <div>
+          <div class="font-label-sm text-label-sm uppercase text-outline font-semibold">Certificado Halal</div>
+          <div class="font-title-md text-title-md font-bold text-primary flex items-center gap-1">
+            <span class="material-symbols-outlined text-secondary text-[18px]">verified</span>
+            <span>RACS-UAE Valid</span>
+          </div>
+        </div>
+      </div>
+    `;
+    setTimeout(() => {
+      res.children[0].classList.remove('animate-pulse');
+    }, 400);
+  }
+
+  function simulateAI(type) {
+    const chat = document.getElementById('ai-chat-box');
+    let userMsg = '';
+    let aiResponse = '';
+
+    if (type === 'moq') {
+      userMsg = '&iquest;Cuál es el pedido mínimo (MOQ) de pulpas con flete a Jebel Ali?';
+      aiResponse = 'El MOQ para envíos marítimos consolidados LCL es de <strong>2 Pallets (1,920 kg)</strong>. Para tarifa preferencial FCL recomendamos contenedor Reefer de 20ft (12 MT) o 40ft (24 MT). Despachos con entrega en puerto Jebel Ali incluyen certificado Halal y fitosanitario.';
+    } else if (type === 'halal') {
+      userMsg = 'Necesito verificar la acreditación Halal aceptada en los Emiratos.';
+      aiResponse = 'Nuestra certificación Halal está avalada por entidades autorizadas por el <strong>Ministerio de Industria y Tecnología Avanzada de los EAU (MoIAT)</strong> y el estándar GSO 2055-1. La mercancía no requiere trámites adicionales a su llegada a la aduana de Dubái.';
+    } else if (type === 'transit') {
+      userMsg = '&iquest;Cuál es el tiempo de tránsito desde puertos colombianos a Dubái?';
+      aiResponse = 'La ruta marítima directa desde Buenaventura o Cartagena hacia el Puerto de Jebel Ali tiene un tiempo de tránsito promedio de <strong>21 a 23 días</strong> en buques porta-contenedores Reefer con telemetría satelital.';
+    }
+
+    chat.innerHTML += `
+      <div class="flex items-start gap-2.5 justify-end">
+        <div class="p-3 rounded-lg bg-primary text-on-primary max-w-[85%]">
+          <p>${userMsg}</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-2.5">
+        <div class="w-7 h-7 rounded-full bg-primary text-secondary-fixed flex items-center justify-center flex-shrink-0 text-[14px]">
+          <span class="material-symbols-outlined text-[16px]">support_agent</span>
+        </div>
+        <div class="p-3 rounded-lg bg-surface-container-low text-on-surface max-w-[85%]">
+          <p>${aiResponse}</p>
+        </div>
+      </div>
+    `;
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function sendUserAI() {
+    const inp = document.getElementById('ai-user-input');
+    const msg = inp.value.trim();
+    if (!msg) return;
+    
+    const chat = document.getElementById('ai-chat-box');
+    chat.innerHTML += `
+      <div class="flex items-start gap-2.5 justify-end">
+        <div class="p-3 rounded-lg bg-primary text-on-primary max-w-[85%]">
+          <p>${msg}</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-2.5">
+        <div class="w-7 h-7 rounded-full bg-primary text-secondary-fixed flex items-center justify-center flex-shrink-0 text-[14px]">
+          <span class="material-symbols-outlined text-[16px]">support_agent</span>
+        </div>
+        <div class="p-3 rounded-lg bg-surface-container-low text-on-surface max-w-[85%]">
+          <p>Su requerimiento ha sido registrado por el motor B2B. Puede utilizar el formulario proforma inferior o ponerse en contacto con nuestro Trade Desk en DMCC Dubái.</p>
+        </div>
+      </div>
+    `;
+    inp.value = '';
+    chat.scrollTop = chat.scrollHeight;
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    document.getElementById('b2b-form').classList.add('opacity-50');
+    setTimeout(() => {
+      document.getElementById('form-success').classList.remove('hidden');
+      document.getElementById('b2b-form').reset();
+      document.getElementById('b2b-form').classList.remove('opacity-50');
+    }, 600);
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    calculateQuote();
+  });
+</script></main><div class="fixed bottom-6 right-6 z-40"><button class="flex items-center gap-space-sm pl-4 pr-5 py-3 rounded-full bg-primary text-on-primary shadow-[0_12px_32px_-4px_rgba(13,71,43,0.35)] ring-1 ring-secondary-fixed/50 hover:bg-primary-container transition-all group"><span class="material-symbols-outlined text-secondary-fixed text-[24px] group-hover:scale-110 transition-transform">psychology</span><div class="text-left"><div class="font-title-md text-[13px] font-bold text-on-primary leading-tight">Castilla B2B Trade AI</div><div class="font-label-sm text-[11px] text-surface-container-high">Inocuidad • Jebel Ali Transit • EN/AR/ES</div></div><span class="material-symbols-outlined text-secondary-fixed text-[18px]">forum</span></button></div><footer class="w-full bg-primary text-on-primary border-t border-primary-container/40"><div class="max-w-[1440px] mx-auto px-gutter pt-16 pb-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-12 border-b border-primary-container/50"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-surface-container-lowest flex items-center justify-center p-1"><img alt="Castilla Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Ws17QyC7ltgu0EgLjcjZfW6fWh0YexXp1956aiK-iooh2cVlENZ7F4vpAoEh3FvlCO21cuGtBeA00gwCj5y8W-s3HWf5PSrRufcC6GkOiGN04HY38ACetb74svXy9qU_o1fgvdP7CA9mv3KGdnSpzEIJojr6ukn5yBahaWvY7cBDEF_N57pvb6RheTpK0HKqnsP2HmgYPUpFgxVYeImFzJiO_opQj0PEnGqo08HmtrpKjmMJmsTXkHWG_x"/></div><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-surface-bright">CASTILLA FRUITS</span></div><p class="font-body-sm text-body-sm text-surface-container-high/90 max-w-md">Productor y exportador agroindustrial de Colombia con distribución soberana para la hotelería, retail de lujo y cadenas HORECA de los Emiratos Árabes Unidos y el Consejo de Cooperación del Golfo (GCC).</p><div class="flex flex-wrap gap-2 pt-2"><span class="px-2.5 py-1 rounded bg-tertiary-container/80 border border-secondary/40 text-[11px] font-semibold text-secondary-fixed uppercase tracking-wider">ISO 22000 Certified</span><span class="px-2.5 py-1 rounded bg-tertiary-container/80 border border-secondary/40 text-[11px] font-semibold text-secondary-fixed uppercase tracking-wider">HACCP &amp; GlobalGAP</span><span class="px-2.5 py-1 rounded bg-tertiary-container/80 border border-secondary/40 text-[11px] font-semibold text-secondary-fixed uppercase tracking-wider">UAE Halal Compliance</span></div></div><div><h4 class="font-title-md text-title-md text-secondary-fixed font-bold tracking-wider uppercase mb-4">Sedes Corporativas</h4><div class="space-y-4 font-body-sm text-body-sm text-surface-container-high"><div class="border-l-2 border-secondary pl-3"><p class="font-bold text-surface-bright">Sede Agroindustrial Colombia</p><p>Parque Agroexportador Calle 10 #43E</p><p>Medellín / Bogotá D.C. • Colombia</p></div><div class="border-l-2 border-secondary pl-3"><p class="font-bold text-surface-bright">UAE &amp; GCC Trade Hub</p><p>DMCC Business Centre, Unit 42-B</p><p>JAFZA Free Zone • Dubai, UAE</p></div></div></div><div><h4 class="font-title-md text-title-md text-secondary-fixed font-bold tracking-wider uppercase mb-4">Líneas &amp; Despachos</h4><ul class="space-y-2.5 font-label-md text-label-md text-surface-container-high"><li><a class="hover:text-secondary-fixed transition-colors" data-path="portafolio-de-productos" href="#">Pulpas Asépticas Congeladas IQF</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="portafolio-de-productos" href="#">Frutas Tropicales Liofilizadas Clean Label</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="portafolio-de-productos" href="#">Mermeladas Gourmet &amp; Syrups</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="sostenibilidad-y-trazabilidad" href="#">Control de Cadena de Frío Reefer</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="portal-b2b-y-cotizaciones" href="#">Inspección Fitosanitaria ICA / MoCCaE</a></li></ul></div><div><h4 class="font-title-md text-title-md text-secondary-fixed font-bold tracking-wider uppercase mb-4">HORECA Buyers Desk</h4><p class="font-body-sm text-body-sm text-surface-container-high mb-3">Suscríbase a los despachos quincenales marítimos y aéreos hacia Jebel Ali y Dubai International (DXB).</p><div class="flex flex-col gap-2"><input class="w-full px-3 py-2 rounded bg-tertiary-container/90 border border-primary-container text-on-tertiary font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-secondary" placeholder="procurement@luxuryhotel.ae" type="email"/><button class="w-full py-2 px-3 rounded bg-secondary-container text-on-secondary-container hover:bg-secondary-fixed font-label-md font-bold uppercase tracking-wider transition-colors">Suscribir Comprador</button></div></div></div><div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 font-label-sm text-label-sm text-surface-container-high/70"><div>© 2025 Castilla International Fruits S.A.S. • All Rights Reserved • Dubai • Bogotá</div><div class="flex gap-6"><a class="hover:text-secondary-fixed transition-colors" data-path="terminos-de-exportacion" href="#">Incoterms CIF/FOB Dubai</a><a class="hover:text-secondary-fixed transition-colors" data-path="politica-de-privacidad" href="#">Privacidad DMCC &amp; Colombia</a><a class="hover:text-secondary-fixed transition-colors" data-path="certificaciones-y-halal" href="#">Acreditación Halal RACS / MoIAT</a></div></div></div></footer></body></html>
